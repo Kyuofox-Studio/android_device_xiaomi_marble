@@ -383,6 +383,7 @@ PRODUCT_PACKAGES += \
     ApertureResDevice \
     FrameworksResDevice \
     NfcResDevice \
+    LineageResDevice \
     SettingsProviderResDevice \
     SettingsResDevice \
     SystemUIResDevice \
