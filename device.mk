@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
     MarbleSettings \
     MarbleSettingsProvider \
     MarbleSystemUI \
+    MarbleSystemUIAOSPA \
     WifiResTarget
 
 # Qualcomm XR
