@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    SettingsProviderResDevice
+    SettingsProviderResDevice \
+    WifiResDevice
 
 # Partitions
 PRODUCT_PACKAGES += \
