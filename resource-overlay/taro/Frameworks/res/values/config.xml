@@ -30,7 +30,7 @@
         <item>/system/framework/oat/arm64/services.odex</item>
         <item>/system/framework/services.jar</item>
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
+        <item>/system/bin/surfaceflinger</item>
         <item>/system_ext/lib64/libsurfaceflinger.so</item>
     </string-array>
 
