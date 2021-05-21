@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     ueventd-odm.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    SettingsProviderResDevice
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
