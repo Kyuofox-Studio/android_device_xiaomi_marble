@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
     SettingsProviderResDevice \
+    SettingsResDevice \
     SystemUIResDevice \
     WifiResDevice
 
