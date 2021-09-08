@@ -48,6 +48,8 @@
         <boolean name="carrier_cross_sim_ims_available_bool" value="true" />
         <boolean name="carrier_b2c_enriched_calling_supported_bool" value="false" />
         <boolean name="carrier_call_progress_notification" value="true" />
+        <boolean name="dtmf_type_enabled_bool" value="true" />
+        <boolean name="csp_enabled_bool" value="true" />
         <int-array name="supported_sms_rp_cause_values_int_array" num="4">
             <item value="38" />
             <item value="41" />
