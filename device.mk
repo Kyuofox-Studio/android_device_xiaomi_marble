@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
     audioadsprpcd
 
 PRODUCT_PACKAGES += \
+    firmware_aw_cali.bin_symlink
+
+PRODUCT_PACKAGES += \
     lib_bt_aptx:64 \
     lib_bt_ble:64 \
     lib_bt_bundle:64 \
