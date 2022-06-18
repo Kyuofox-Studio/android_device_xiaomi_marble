@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     WifiResTarget_ukee
 
 PRODUCT_PACKAGES += \
+    FrameworksResDevice \
     SettingsProviderResDevice \
     WifiResDevice
 
