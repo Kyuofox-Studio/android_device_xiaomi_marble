@@ -38,6 +38,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 # Assert
 TARGET_OTA_ASSERT_DEVICE := marble
 
+# Audio
+$(call soong_config_set, android_hardware_audio, run_64bit, true)
+
 # Boot
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
