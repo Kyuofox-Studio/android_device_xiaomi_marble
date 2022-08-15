@@ -184,17 +184,6 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- MMS user agent string, for example OemNameDeviceName
-         If the string contains a '%s' format string then that substring will be replaced
-         with the value of Build.MODEL , ie
-         <string name="config_mms_user_agent">OemName%s</string> -->
-    <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
-
-    <!-- MMS user agent prolfile url, for example https://uaprof.oem_name.com/DeviceName.xml
-         if the string contains a '%s' format string then that substring will be replaced
-         with the value of Build.MODEL , ie https://uaprof.oem_name.com/%s.xml -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
