@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
     WifiResTarget_ukee
 
 PRODUCT_PACKAGES += \
+    ApertureResDevice \
     FrameworksResDevice \
     SettingsProviderResDevice \
     SettingsResDevice \
