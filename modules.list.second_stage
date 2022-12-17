@@ -231,3 +231,9 @@ qrtr-gunyah.ko
 msm_drm.ko
 msm-mmrm.ko
 fan53555.ko
+spf_core_dlkm.ko
+gpr_dlkm.ko
+snd_event_dlkm.ko
+q6_notifier_dlkm.ko
+q6_pdr_dlkm.ko
+adsp_loader_dlkm.ko
