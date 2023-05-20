@@ -159,6 +159,9 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/video-driver \
     qcom/opensource/wlan/qcacld-3.0/.qca6490
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
