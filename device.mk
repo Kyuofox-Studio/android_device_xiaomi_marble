@@ -390,6 +390,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ApertureResDevice \
     FrameworksResDevice \
+    NfcResDevice \
     SettingsProviderResDevice \
     SettingsResDevice \
     SystemUIResDevice \
