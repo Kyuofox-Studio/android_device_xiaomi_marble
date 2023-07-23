@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Redmi/marble/marble:13/SKQ1.221022.001/V14.0.22.0.TMRCNXM:user/release-keys</string>
+</resources>
