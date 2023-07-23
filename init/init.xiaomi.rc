@@ -1,0 +1,107 @@
+#
+# Copyright (C) 2023 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init
+    start vendor.audioadsprpcd_audiopd
+
+on boot
+    # Modem
+    chmod 0777 /dev/smd8
+    chown radio radio /dev/smd8
+
+    # DT2W
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
+    # Fingerprint
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+    chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
+
+    # Modify permission of block_size node
+    chown -h vendor_qdss /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+    chmod 660 /sys/bus/coresight/devices/coresight-tmc-etr/block_size
+
+on post-fs
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+
+on post-fs-data
+    # Create folder of camera
+    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
+    mkdir /data/vendor/camera 0777 camera camera
+    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
+    chmod 0666 /dev/camlog
+
+    # Create the directories used by the wireless subsystem
+    mkdir /data/vendor/mac_addr 0770 system wifi
+
+    # Fingerprint
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
+
+    # Modem
+    mkdir /data/vendor/modem 0777 radio radio
+
+    # nv_mac
+    mkdir /data/vendor/mac_addr 0770 system wifi
+
+    # Create the directory used by qrtr-lookup
+    mkdir /data/vendor/qrtr 0775 system system
+
+on property:sys.boot_completed=1
+    start qrtr-lookup
+
+service qrtr-lookup /vendor/bin/qrtr-lookup
+    class core
+    user system
+    group system
+    disabled
+    oneshot
+
+service batterysecret /vendor/bin/batterysecret
+    class last_start
+    user root
+    group system system wakelock
+    disabled
+    override
+
+service mi_thermald /vendor/bin/mi_thermald
+    class main
+    user root
+    group system
+    override
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class early_hal
+    user nfc
+    group nfc
+    override
+    disabled
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    class early_hal
+    user system
+    group system
+    override
+    disabled
+
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    class early_hal
+    user system
+    group nfc system
+    override
+    disabled
+
+# Do not enable NFC on marblein
+on property:ro.boot.product.hardware.sku=marble
+    enable nqnfc_2_0_hal_service
+    enable secureelement-hal_1_2
+    enable qti_esepowermanager_service_1_1
