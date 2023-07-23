@@ -1,0 +1,18 @@
+# Bluetooth
+bluetooth.hardware.power.idle_cur_ma=6
+bluetooth.hardware.power.operating_voltage_mv=3700
+bluetooth.hardware.power.rx_cur_ma=28
+bluetooth.hardware.power.tx_cur_ma=36
+persist.vendor.service.bdroid.soc.alwayson=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+
+# Camera
+persist.vendor.camera.aon.cameraId=8
+persist.vendor.camera.aon8475.cameraId=9
+
+# Charger
+ro.charger.enable_suspend=1
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
