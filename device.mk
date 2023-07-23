@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
     MarbleFrameworks \
+    MarbleSettingsProvider \
     MarbleSystemUI \
     WifiResTarget
 
