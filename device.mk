@@ -163,6 +163,16 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     libkeymaster_messages.vendor
 
+# Kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)-kernel/kernel
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel \
+    $(LOCAL_PATH)-kernel/dtb:dtb.img \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)-kernel/modules/ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
+
+PRODUCT_VENDOR_KERNEL_HEADERS += $(LOCAL_PATH)-kernel/kernel-headers
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-V1-ndk_platform.vendor
