@@ -67,6 +67,11 @@ function blob_fixup() {
         vendor/etc/init/hw/init.batterysecret.rc | vendor/etc/init/hw/init.mi_thermald.rc | vendor/etc/init/init.mfp-daemon.rc)
             sed -i '/seclabel/d' "${2}"
             ;;
+        vendor/bin/hw/vendor.qti.secure_element@1.2-service)
+            "${PATCHELF}" --replace-needed "jcos_nq_client-v1.so" "jcos_nq_client.so" "${2}"
+            "${PATCHELF}" --replace-needed "ls_nq_client-v1.so" "ls_nq_client.so" "${2}"
+            "${PATCHELF}" --replace-needed "se_nq_extn_client-v1.so" "se_nq_extn_client.so" "${2}"
+            ;;
     esac
 }
 
