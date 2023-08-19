@@ -330,6 +330,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     android.hardware.nfc@1.2.vendor \
+    com.android.nfc_extras \
     libchrome.vendor
 
 PRODUCT_COPY_FILES += \
