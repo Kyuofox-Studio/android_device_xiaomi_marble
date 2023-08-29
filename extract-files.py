@@ -15,6 +15,15 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'hardware/qcom-caf/sm8450',
+    'hardware/qcom-caf/wlan',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/dataservices',
+]
+
 blob_fixups: blob_fixups_user_type = {
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
@@ -63,6 +72,7 @@ module = ExtractUtilsModule(
     'marble',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if path.isfile(path.join(module.device_path, 'proprietary-firmware.txt')):
