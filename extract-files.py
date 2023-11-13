@@ -33,6 +33,16 @@ blob_fixups: blob_fixups_user_type = {
             b'IcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE'
             + b'\x00' * 10,
         ),
+    (
+        'vendor/etc/init/hw/init.batterysecret.rc',
+        'vendor/etc/init/hw/init.mi_thermald.rc',
+        'vendor/etc/init/hw/init.qcom.usb.rc',
+        'vendor/etc/init/hw/init.qti.kernel.rc',
+    ): blob_fixup()
+        .regex_replace(
+            'on charger',
+            'on property:init.svc.vendor.charger=running',
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
