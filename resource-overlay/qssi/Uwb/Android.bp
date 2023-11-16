@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "UwbResCommon",
-    product_specific: true,
+    vendor: true,
 }
