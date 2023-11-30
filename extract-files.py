@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from os import path
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -50,6 +52,9 @@ module = ExtractUtilsModule(
     'xiaomi',
     blob_fixups=blob_fixups,
 )
+
+if path.isfile(path.join(module.device_path, 'proprietary-firmware.txt')):
+    module.add_firmware_proprietary_file()
 
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
