@@ -17,8 +17,5 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
-# SSR
-persist.vendor.ssr.enable_ramdumps=1
-
 # WiFi display
 persist.debug.wfd.enable=1
