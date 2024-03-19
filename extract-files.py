@@ -36,6 +36,12 @@ blob_fixups: blob_fixups_user_type = {
             + b'\x00' * 10,
         ),
     (
+        'vendor/bin/hw/android.hardware.security.keymint-service-qti',
+        'vendor/lib/libqtikeymint.so',
+        'vendor/lib64/libqtikeymint.so',
+    ): blob_fixup()
+        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+    (
         'vendor/etc/init/hw/init.batterysecret.rc',
         'vendor/etc/init/hw/init.mi_thermald.rc',
         'vendor/etc/init/hw/init.qcom.usb.rc',
