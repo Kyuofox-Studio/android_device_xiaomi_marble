@@ -236,6 +236,10 @@ PRODUCT_PACKAGES += \
     ueventd-odm.rc \
     vendor_modprobe.sh
 
+# IFAA
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
