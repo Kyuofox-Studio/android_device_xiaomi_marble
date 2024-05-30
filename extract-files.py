@@ -29,15 +29,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('xml=version', 'xml version'),
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup()
         .regex_replace(r'=([0-9]+)>', r'="\1">'),
-    (
-        'vendor/etc/init/hw/init.batterysecret.rc',
-        'vendor/etc/init/hw/init.mi_thermald.rc',
-        'vendor/etc/init/hw/init.qcom.usb.rc',
-    ): blob_fixup()
-        .regex_replace(
-            'on charger',
-            'on property:init.svc.vendor.charger=running',
-        ),
     'vendor/etc/init/init.embmssl_server.rc': blob_fixup()
         .regex_replace('.*interface.*\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
