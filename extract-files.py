@@ -41,15 +41,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
-    (
-        'vendor/etc/init/hw/init.batterysecret.rc',
-        'vendor/etc/init/hw/init.mi_thermald.rc',
-        'vendor/etc/init/hw/init.qcom.usb.rc',
-    ): blob_fixup()
-        .regex_replace(
-            'on charger',
-            'on property:init.svc.vendor.charger=running',
-        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
