@@ -1,0 +1,9 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service vendor.nonui-notifier /vendor/bin/nonui-notifier
+   class main
+   user system
+   group system
