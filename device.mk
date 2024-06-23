@@ -57,3 +57,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 33
+
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    firmware_qca6490_WCNSS_qcom_cfg.ini_symlink \
+    firmware_qca6490_wlan_mac.bin_symlink
