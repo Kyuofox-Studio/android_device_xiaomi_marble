@@ -159,6 +159,9 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/video-driver \
     qcom/opensource/wlan/qcacld-3.0/.qca6490
 
+# Light
+TARGET_SENSOR_NOTIFIER_EXT := //$(DEVICE_PATH):libsensor-notifier-ext-light
+
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
