@@ -442,6 +442,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal \
     android.frameworks.sensorservice@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    sensor-notifier
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_ukee/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_ukee/android.hardware.sensor.compass.xml \
@@ -491,9 +494,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti-v2
 
 # Touchscreen
-PRODUCT_PACKAGES += \
-    nonui-notifier
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 

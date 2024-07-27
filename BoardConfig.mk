@@ -225,6 +225,10 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Sensors
+TARGET_SENSOR_NOTIFIER_EXT ?= libsensor-notifier-ext
+$(call soong_config_set, xiaomiMarbleSensorVars, extensionLibs, $(TARGET_SENSOR_NOTIFIER_EXT))
+
 # VINTF
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
