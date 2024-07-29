@@ -44,7 +44,7 @@
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
-    <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">105.0%</fraction>
     <item format="float" name="config_screenBrightnessDimFloat" type="dimen">0.000854597</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
