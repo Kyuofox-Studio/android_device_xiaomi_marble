@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default:64 \
+    audio.primary.taro:64 \
     audio.r_submix.default:64 \
     audio.usb.default:64
 
