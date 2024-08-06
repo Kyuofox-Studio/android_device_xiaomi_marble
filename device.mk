@@ -426,6 +426,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor:64 \
     android.hardware.radio.deprecated@1.0.vendor:64 \
 
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Secure element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor:64
