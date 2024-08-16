@@ -1617,10 +1617,10 @@ system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
-vendor/bin/qcc-trd
+vendor/bin/qcc-trd|30a37f9996e8402fe0a98f4a7a488a5d7aa4aa0a|f2f1d91f85b7059a5598b15339627b0dae7fde3f
 vendor/etc/init/init.qdmastats.rc
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
-vendor/lib64/libgrpc++_unsecure.so
+vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so|02a83d5d8ed00369000e1de5416ed48ed7fa8755|d524631cdc7d9243f4908a5e30c69c7a782d6545
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE=vendor.qti.hardware.qccsyshal@1.0_vendor
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE=vendor.qti.hardware.qccsyshal@1.1_vendor
