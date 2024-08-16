@@ -61,6 +61,11 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.security.sharedsecret-V1-ndk.so',
         )
         .add_needed('android.hardware.security.rkp-V1-ndk.so'),
+    'vendor/bin/qcc-trd': blob_fixup()
+        .replace_needed(
+            'libgrpc++_unsecure.so',
+            'libgrpc++_unsecure_prebuilt.so',
+        ),
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
         'vendor/etc/camera/marble_motiontuning.xml',
@@ -85,6 +90,8 @@ blob_fixups: blob_fixups_user_type = {
             'vendor.qti.hardware.display.config-V2-ndk_platform.so',
             'vendor.qti.hardware.display.config-V2-ndk.so',
         ),
+    'vendor/lib64/libgrpc++_unsecure_prebuilt.so': blob_fixup()
+        .fix_soname(),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
