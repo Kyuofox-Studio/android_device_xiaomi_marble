@@ -39,7 +39,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
-        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+        .add_needed('android.hardware.security.rkp-V1-ndk.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
             'vendor.qti.hardware.display.config-V2-ndk_platform.so',
