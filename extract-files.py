@@ -20,7 +20,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
-        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+        .add_needed('android.hardware.security.rkp-V1-ndk.so'),
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
         'vendor/etc/camera/marble_motiontuning.xml',
