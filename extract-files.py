@@ -79,6 +79,11 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
+    'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .replace_needed(
+            'android.media.audio.common.types-V2-cpp.so',
+            'android.media.audio.common.types-V3-cpp.so',
+        ),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
