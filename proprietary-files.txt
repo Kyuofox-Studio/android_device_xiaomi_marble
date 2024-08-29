@@ -1418,12 +1418,6 @@ product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoog
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|01b74943dc0ae9353883298d36fba94128536c9e
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|375acb133095c92d7a411f1c46fae46637f4c5c6
 
-# Identity service
-vendor/bin/hw/android.hardware.identity-service-qti
-vendor/etc/init/android.hardware.identity-service-qti.rc
-vendor/etc/vintf/manifest/manifest_lahaina_identity.xml
-vendor/lib64/libqtiidentitycredential.so
-
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
 
