@@ -114,6 +114,8 @@ blob_fixups: blob_fixups_user_type = {
             'vendor.qti.hardware.display.config-V2-ndk_platform.so',
             'vendor.qti.hardware.display.config-V2-ndk.so',
         ),
+    'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
+        .add_needed('libhidlbase_shim.so'),
     (
         'vendor/lib64/libTrueSight.so',
         'vendor/lib64/libalLDC.so',
