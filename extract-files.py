@@ -54,7 +54,6 @@ lib_fixups: lib_fixups_user_type = {
         'libar-pal',
         'libpalclient',
         'libwpa_client',
-        'libwfdaac_vendor',
         'vendor.qti.hardware.pal@1.0-impl',
     ): lib_fixup_remove,
 }
