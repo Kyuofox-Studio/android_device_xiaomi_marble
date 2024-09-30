@@ -1,5 +1,15 @@
 # All unpinned blobs below are extracted from marble OS3.0.5.0.VMRCNXM
 
+# Current blobs with ELF checks disabled:
+# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+# libar-pal depends on libagmclient, which is a gnu makefile target
+# libawcal depends on libagmmixer, which is a gnu makefile target
+# libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
+# libmcs depends on libagm, which is decommonized
+# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+# libqtigefar depends on libar-pal, which is decommonized
+# vendor.qti.hardware.AGMIPC@1.0-impl depends on libagm, which is decommonized
+
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
@@ -124,14 +134,12 @@ vendor/firmware/aw882xx_acf.bin
 
 # Audio graph manager
 vendor/lib64/libagm.so
-# vendor.qti.hardware.AGMIPC@1.0-impl depends on libagm, which is decommonized
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF
 
 # Audio libraries
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
 vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
 vendor/lib64/hw/gyro_fusion_interface.so
 vendor/lib64/lib_misound_asc.so
@@ -140,13 +148,11 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
-# libar-pal depends on libagmclient, which is a gnu makefile target
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiocloudctrl.so
 vendor/lib64/libaudioroute_ext.so
-# libawcal depends on libagmmixer, which is a gnu makefile target
 vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
@@ -155,11 +161,9 @@ vendor/lib64/libdapparamstorage.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
-# libmcs depends on libagm, which is decommonized
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libmmhardware.so
 vendor/lib64/libpal_net_if.so
-# libqtigefar depends on libar-pal, which is decommonized
 vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/libresampler.so
 vendor/lib64/libxlog.so
@@ -978,7 +982,6 @@ vendor/lib64/libsdsprpc.so
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/bin/cnd
-# qms depends on libwpa_client, which is a gnu makefile target
 vendor/bin/qms;DISABLE_CHECKELF
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
@@ -1014,13 +1017,11 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/qms.rc
-# libcne depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libjnihelper.so
-# libmasc depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libmasc.so;DISABLE_CHECKELF
 vendor/lib64/libshsc.so
 vendor/lib64/libwms.so
@@ -1302,7 +1303,6 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/loc_launcher
-# lowi-server depends on libwpa_client, which is a gnu makefile target
 vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/xtra-daemon
@@ -1454,7 +1454,6 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
