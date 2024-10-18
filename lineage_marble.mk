@@ -15,14 +15,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23049RAD8C
 
-PRODUCT_SYSTEM_NAME := marble
-PRODUCT_SYSTEM_DEVICE := marble
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="marble-user 15 AQ3A.250226.002 OS3.0.5.0.VMRCNXM release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
-BUILD_FINGERPRINT := Redmi/marble/marble:15/AQ3A.250226.002/OS3.0.5.0.VMRCNXM:user/release-keys
+    BuildDesc="marble-user 15 AQ3A.250226.002 OS3.0.5.0.VMRCNXM release-keys" \
+    BuildFingerprint=Redmi/marble/marble:15/AQ3A.250226.002/OS3.0.5.0.VMRCNXM:user/release-keys \
+    DeviceProduct=marble \
+    SystemName=marble
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
