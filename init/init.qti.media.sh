@@ -34,8 +34,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #===============================================================================
 
-build_codename=`getprop vendor.media.system.build_codename`
-
 if [ -f /sys/devices/soc0/soc_id ]; then
     soc_hwid=`cat /sys/devices/soc0/soc_id` 2> /dev/null
 else
