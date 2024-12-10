@@ -110,6 +110,17 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/lib64/libgrpc++_unsecure_prebuilt.so': blob_fixup()
         .fix_soname(),
+    (
+        'vendor/lib64/libTrueSight.so',
+        'vendor/lib64/libalLDC.so',
+        'vendor/lib64/libalhLDC.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
