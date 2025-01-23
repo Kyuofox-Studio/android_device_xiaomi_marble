@@ -95,6 +95,10 @@ on boot
     chmod 0660 /sys/class/touch/touch_dev/gesture_double_tap_enabled
     chmod 0664 /sys/class/touch/touch_dev/gesture_double_tap_state
 
+    # High touch polling rate
+    chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    chmod 0660 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+
 on property:sys.boot_completed=1
     # Set thermal mode to mgame
     write /sys/devices/virtual/thermal/thermal_message/sconfig 20
