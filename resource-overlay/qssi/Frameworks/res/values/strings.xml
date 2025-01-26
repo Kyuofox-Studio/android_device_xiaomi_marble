@@ -4,7 +4,5 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <string name="config_emergency_apn"/>
-
     <string name="config_optionalPackageVerifierName">seemp.service</string>
 </resources>
