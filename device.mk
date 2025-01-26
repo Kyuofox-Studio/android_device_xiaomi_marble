@@ -308,9 +308,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
-    WifiResTarget \
-    WifiResTarget_spf \
-    WifiResTarget_ukee
+    WifiResTarget_spf
 
 PRODUCT_PACKAGES += \
     ApertureResDevice \
