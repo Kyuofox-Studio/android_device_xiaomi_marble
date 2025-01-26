@@ -4,8 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
-
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
     <bool name="config_wifi_background_scan_support">true</bool>
