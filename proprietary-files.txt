@@ -1,9 +1,6 @@
 # All unpinned blobs below are extracted from marble OS3.0.5.0.VMRCNXM
 
 # Current blobs with ELF checks disabled:
-# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
-# libar-pal depends on libagmclient, which is a gnu makefile target
-# libawcal depends on libagmmixer, which is a gnu makefile target
 # libmcs depends on libar-acdb, libagm, libats, liblx-osal which are gnu makefile targets
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 # libqtigefar depends on libar-pal, which is a gnu makefile target
@@ -119,33 +116,21 @@ vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio configs
-vendor/etc/audio_cloud_control_white_list.xml
-vendor/etc/backend_conf.xml
-vendor/etc/kvh2xml.xml
-
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
-
-# Audio graph manager
-vendor/lib64/libagm.so
 
 # Audio libraries
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
 vendor/lib64/lib_misound_asc.so
 vendor/lib64/libadm.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libdapparamstorage.so
-vendor/lib64/libkaraokepal.so
 vendor/lib64/libmcs.so;DISABLE_CHECKELF
 vendor/lib64/libmmhardware.so
 vendor/lib64/libpal_net_if.so
