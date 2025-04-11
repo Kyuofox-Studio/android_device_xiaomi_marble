@@ -52,7 +52,11 @@
             </keys_and_values>
         </stream>
         <!-- Deep Buffer stream -->
-        <stream type="PAL_STREAM_DEEP_BUFFER">
+        <!--
+            This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+            so fall back to the deep buffer values.
+        -->
+        <stream type="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
             <keys_and_values Direction="RX" Instance="1">
                 <!-- STREAMRX - PCM_DEEP_BUFFER -->
                 <graph_kv key="0xA1000000" value="0xA1000001"/>
@@ -82,14 +86,6 @@
                 <graph_kv key="0xB1000000" value="0xB1000001"/>
                 <!-- INSTANCE - INSTANCE_3 -->
                 <graph_kv key="0xAB000000" value="0x3"/>
-            </keys_and_values>
-        </stream>
-        <stream type="PAL_STREAM_VOICE_RECOGNITION">
-            <keys_and_values Direction="TX" Instance="1">
-                <!-- STREAMTX - VOICE_RECOGNITION_RECORD -->
-                <graph_kv key="0xB1000000" value="0xB1000011"/>
-                <!-- INSTANCE - INSTANCE_1 -->
-                <graph_kv key="0xAB000000" value="0x1"/>
             </keys_and_values>
         </stream>
         <!-- Compressed-playback stream -->
@@ -909,13 +905,11 @@
         </devicepp>
         <!-- IN Handset MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_HANDSET_MIC">
-            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
-                <!-- DEVICETX - HANDSETMIC -->
-                <graph_kv key="0xA3000000" value="0xA3000004"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
-                <graph_kv key="0xAD000000" value="0xAD000017"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
+            <!--
+                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+                so fall back to the deep buffer values.
+            -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - HANDSETMIC -->
                 <graph_kv key="0xA3000000" value="0xA3000004"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
@@ -1038,13 +1032,11 @@
         </devicepp>
         <!-- IN Speaker MIC DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_SPEAKER_MIC">
-            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
-                <!-- DEVICETX - Speaker MIC -->
-                <graph_kv key="0xA3000000" value="0xA3000001"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
-                <graph_kv key="0xAD000000" value="0xAD000017"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
+            <!--
+                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+                so fall back to the deep buffer values.
+            -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - SPEAKER_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
@@ -1191,7 +1183,11 @@
         </devicepp>
         <!-- IN BT_SCO_Headset DevicePPs  -->
         <devicepp id="PAL_DEVICE_IN_BLUETOOTH_SCO_HEADSET">
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
+            <!--
+                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+                so fall back to the deep buffer values.
+            -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - BT_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000002"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
@@ -1209,16 +1205,14 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_FLUENCE_SMECNS -->
                 <graph_kv key="0xAD000000" value="0xAD000007"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
-                <!-- DEVICETX - BT_TX -->
-                <graph_kv key="0xA3000000" value="0xA3000002"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION  -->
-                <graph_kv key="0xAD000000" value="0xAD000017"/>
-            </keys_and_values>
         </devicepp>
         <!--IN Wired headset_IN DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_WIRED_HEADSET">
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
+            <!--
+                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+                so fall back to the deep buffer values.
+            -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - HEADPHONE_MIC -->
                 <graph_kv key="0xA3000000" value="0xA3000003"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
@@ -1260,16 +1254,14 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
                 <graph_kv key="0xAD000000" value="0xAD000003"/>
             </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
-                <!-- DEVICETX - HEADPHONE_MIC -->
-                <graph_kv key="0xA3000000" value="0xA3000003"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
-                <graph_kv key="0xAD000000" value="0xAD000017"/>
-            </keys_and_values>
         </devicepp>
         <!-- IN USB device and USB headset DevicePPs -->
         <devicepp id="PAL_DEVICE_IN_USB_DEVICE,PAL_DEVICE_IN_USB_HEADSET">
-            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER">
+            <!--
+                This device has no separate PAL_STREAM_VOICE_RECOGNITION calibration,
+                so fall back to the deep buffer values.
+            -->
+            <keys_and_values StreamType="PAL_STREAM_DEEP_BUFFER,PAL_STREAM_VOICE_RECOGNITION">
                 <!-- DEVICETX - USB_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_SMECNS -->
@@ -1328,12 +1320,6 @@
                 <graph_kv key="0xA3000000" value="0xA3000005"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_AUDIO_FLUENCE_ENDFIRE -->
                 <graph_kv key="0xAD000000" value="0xAD000003"/>
-            </keys_and_values>
-            <keys_and_values StreamType="PAL_STREAM_VOICE_RECOGNITION">
-                <!-- DEVICETX - USB_Tx -->
-                <graph_kv key="0xA3000000" value="0xA3000005"/>
-                <!-- DEVICEPP_TX - DEVICEPP_TX_VOICE_RECOGNITION -->
-                <graph_kv key="0xAD000000" value="0xAD000017"/>
             </keys_and_values>
         </devicepp>
         <!-- IN Handset_VA_MIC DevicePPs -->
