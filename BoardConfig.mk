@@ -151,9 +151,6 @@ TARGET_KERNEL_EXT_MODULES := \
 # Light
 TARGET_SENSOR_NOTIFIER_EXT := //$(DEVICE_PATH):libsensor-notifier-ext-light
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
