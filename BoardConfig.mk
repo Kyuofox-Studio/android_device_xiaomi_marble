@@ -39,8 +39,6 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 TARGET_OTA_ASSERT_DEVICE := marble
 
 # Audio
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
-
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
@@ -73,7 +71,6 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
-$(call soong_config_set, qtilocation, feature_nhz, false)
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -210,9 +207,6 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
-# Touchscreen
-$(call soong_config_set, XIAOMI_TOUCH, HIGH_TOUCH_POLLING_PATH, /sys/devices/virtual/touch/touch_dev/bump_sample_rate)
 
 # VINTF
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
