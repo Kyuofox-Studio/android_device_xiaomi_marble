@@ -123,7 +123,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/backend_conf.xml
 vendor/etc/kvh2xml.xml
-vendor/etc/media_codecs_c2_audio.xml
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
@@ -1415,8 +1414,6 @@ vendor/etc/media_codecs_performance_ukee.xml
 vendor/etc/media_codecs_ukee.xml
 vendor/etc/media_profiles_ukee.xml
 vendor/etc/media_ukee/video_system_specs.json
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml

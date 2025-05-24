@@ -68,16 +68,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('xml=version', 'xml version'),
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup()
         .regex_replace(r'=([0-9]+)>', r'="\1">'),
-    'vendor/etc/media_codecs_c2_audio.xml': blob_fixup()
-        .regex_replace('.+media_codecs_dolby_audio.+\n', ''),
     'vendor/etc/media_codecs_ukee.xml': blob_fixup()
         .regex_replace(
             '.+media_codecs_(google_audio|google_c2|google_telephony|'
             'vendor_audio).+\n',
             '',
         ),
-    'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
-        .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
     'system_ext/bin/wfdservice64': blob_fixup()
