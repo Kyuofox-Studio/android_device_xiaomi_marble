@@ -1,10 +1,5 @@
 # All unpinned blobs below are extracted from marble OS3.0.5.0.VMRCNXM
 
-# Current blobs with ELF checks disabled:
-# libmcs depends on libar-acdb, libagm, libats, liblx-osal which are gnu makefile targets
-# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
-# libqtigefar depends on libar-pal, which is a gnu makefile target
-
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
@@ -131,10 +126,10 @@ vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libdapparamstorage.so
-vendor/lib64/libmcs.so;DISABLE_CHECKELF
+vendor/lib64/libmcs.so
 vendor/lib64/libmmhardware.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
+vendor/lib64/libqtigefar.so
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
@@ -1408,7 +1403,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
+vendor/lib64/libqc2audio_hwaudiocodec.so
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
