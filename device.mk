@@ -455,7 +455,6 @@ $(call soong_config_set,qti_vibrator,use_effect_stream,true)
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom:64 \
