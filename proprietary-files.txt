@@ -1121,12 +1121,12 @@ vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/lib64/libbacklight-calib.so
 vendor/lib64/libdigital-dimming.so
-vendor/lib64/libdpps.so
+vendor/lib64/libdpps.so|571e71c8e33a96182ba9eef26b2cb30f1149189a|6dd3c22aebbf3dd4b2a554ec63f616c5c1980dac
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-manager.so|e2abcc461a599e19d8aa0e8b7a48b1121602558a|4d7cf4c9c6c4f2ce985c52d84d1fc7a777dcccb0
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
 # Display postprocessing
