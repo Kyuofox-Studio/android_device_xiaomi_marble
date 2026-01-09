@@ -81,7 +81,7 @@ void LightNotifier::notify() {
             .events = POLLIN,
     };
 
-    _oem_msg* msg = new _oem_msg;
+    _oem_msg msg;
     notify_t notifyType;
     float value;
 
@@ -136,14 +136,14 @@ void LightNotifier::notify() {
         };
 
         for (const auto sensorId : sensorsToNotify) {
-            msg->sensorType = sensorId;
-            msg->notifyType = notifyType;
-            msg->notifyTypeFloat = notifyType;
-            msg->value = value;
-            msg->unknown1 = 1;
-            msg->unknown2 = 5;
+            msg.sensorType = sensorId;
+            msg.notifyType = notifyType;
+            msg.notifyTypeFloat = notifyType;
+            msg.value = value;
+            msg.unknown1 = 1;
+            msg.unknown2 = 5;
 
-            SscCalApiWrapper::getInstance().processMsg(msg);
+            SscCalApiWrapper::getInstance().processMsg(&msg);
         }
     }
 }
