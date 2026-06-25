@@ -53,16 +53,24 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Init
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
 PRODUCT_PACKAGES += \
+    charger_fw_fstab.qti \
+    fstab.qcom \
     init.class_main.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    ueventd.qcom.rc
+    init.target.rc \
+    ueventd.qcom.rc \
+    ueventd-odm.rc
 
 # Partitions
 PRODUCT_PACKAGES += \
