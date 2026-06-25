@@ -57,6 +57,9 @@ TARGET_SCREEN_DENSITY := 440
 # DTB
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
 # Kernel
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
