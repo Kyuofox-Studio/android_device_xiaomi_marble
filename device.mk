@@ -79,6 +79,21 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigResCommon_Sys \
+    FrameworksResCommon_Sys \
+    SettingsResCommon_Sys \
+    SystemUIResCommon_Sys \
+    TelecommResCommon_Sys \
+    TelephonyResCommon_Sys \
+    UwbResCommon_Sys \
+    WifiResCommon_Sys
+
+PRODUCT_PACKAGES += \
+    FrameworksResTarget_Vendor \
+    WifiResTarget \
+    WifiResTarget_spf
+
+PRODUCT_PACKAGES += \
     SettingsProviderResDevice \
     WifiResDevice
 

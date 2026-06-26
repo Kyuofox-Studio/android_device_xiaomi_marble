@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <bool name="config_vendor_softap_beacon_protection_supported">true</bool>
+
+    <bool name="config_vendor_softap_ocv_supported">true</bool>
+
+    <bool name="config_wifiConnectedFrequencyEnhancementEnabled">true</bool>
+
+    <bool name="config_wifi_framework_enable_quick_connect">true</bool>
+</resources>
