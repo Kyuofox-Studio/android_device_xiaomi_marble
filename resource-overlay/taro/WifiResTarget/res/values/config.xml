@@ -4,19 +4,18 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Indicates that bridged AP mode is supported on this device provided that
-     the device interface combination allows for it -->
-    <bool name="config_wifiBridgedSoftApSupported">false</bool>
-
     <!-- Enable Make-Before-Break Wifi network switching.
          Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled">false</bool>
+    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">true</bool>
 
     <!-- Enable concurrent peer to peer + internet connectivity
          Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled">false</bool>
+    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">true</bool>
 
     <!-- Enable concurrent restricted connectivity + internet connectivity
          Note: this is conditional on the device supporting dual concurrent STAs. -->
-    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">false</bool>
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled" translatable="false">true</bool>
+
+    <!-- dual sap mode is supported on this device. -->
+    <bool name="config_wifiBridgedSoftApSupported">true</bool>
 </resources>

@@ -89,7 +89,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResTarget_Vendor \
     WifiResTarget \
-    WifiResTarget_spf
+    WifiResTarget_spf \
+    WifiResTarget_ukee
 
 PRODUCT_PACKAGES += \
     SettingsProviderResDevice \
