@@ -7,3 +7,17 @@ runtime_resource_overlay {
     name: "WifiResTarget",
     vendor: true,
 }
+
+runtime_resource_overlay {
+    name: "WifiResTarget_spf",
+    manifest: "AndroidManifest-spf.xml",
+    resource_dirs : ["spf/res"],
+    vendor: true,
+}
+
+runtime_resource_overlay {
+    name: "WifiResTarget_ukee",
+    manifest: "AndroidManifest-ukee.xml",
+    resource_dirs : ["ukee/res"],
+    vendor: true,
+}
