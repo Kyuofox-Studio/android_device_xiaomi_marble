@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sh \
     init.target.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc \
     ueventd-odm.rc
 
