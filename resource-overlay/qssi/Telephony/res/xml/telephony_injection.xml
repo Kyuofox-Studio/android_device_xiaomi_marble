@@ -23,6 +23,8 @@
         <component>com.android.internal.telephony.data.DataServiceManager</component>
         <component>com.android.internal.telephony.data.TelephonyNetworkAgent</component>
         <component>com.android.internal.telephony.data.DataSettingsManager</component>
-        <component>com.android.internal.telephony.data.TelephonyNetworkFactory</component>
+        <component>com.android.internal.telephony.data.TelephonyNetworkProvider</component>
+        <component>com.android.internal.telephony.data.LinkBandwidthEstimator</component>
+        <component>com.android.internal.telephony.data.AutoDataSwitchController</component>
     </components>
 </injection>
