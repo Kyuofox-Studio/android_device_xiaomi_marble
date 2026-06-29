@@ -124,29 +124,6 @@
         <item>263</item>
         <item>264</item>
         <item>265</item>
-        <item>266</item>
-        <item>267</item>
-        <item>268</item>
-        <item>269</item>
-        <item>270</item>
-        <item>271</item>
-        <item>272</item>
-        <item>273</item>
-        <item>274</item>
-        <item>275</item>
-        <item>276</item>
-        <item>277</item>
-        <item>278</item>
-        <item>279</item>
-        <item>280</item>
-        <item>281</item>
-        <item>282</item>
-        <item>283</item>
-        <item>284</item>
-        <item>285</item>
-        <item>286</item>
-        <item>287</item>
-        <item>288</item>
     </integer-array>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
@@ -401,4 +378,43 @@
 
     <!-- Whether to select voice/data/sms preference without user confirmation -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
+    <!-- Telephony satellite gateway service package name to bind to by default. -->
+    <string name="config_satellite_gateway_service_package" translatable="false">com.google.android.apps.stargate</string>
+
+    <!-- Telephony pointing UI package name to be launched. -->
+    <string name="config_pointing_ui_package" translatable="false">com.google.android.apps.scone</string>
+
+    <!-- Telephony pointing UI class name to be launched. -->
+    <string name="config_pointing_ui_class" translatable="false">com.google.android.apps.scone.satellite.pointingui.ui.PointingUiActivity</string>
+
+    <!-- The app to which the emergency call will be handed over for OEM-enabled satellite
+         messaging. The format of the config string is "package_name;class_name". -->
+    <string name="config_oem_enabled_satellite_sos_handover_app" translatable="false">com.google.android.apps.stargate;com.google.android.apps.stargate.questionnaire.QuestionnaireHomeActivity</string>
+
+    <!-- The action of the intent that Dialer sends to the app to which the emergency call will be
+         handed over for emergency messaging via satellite. -->
+    <string name="config_satellite_emergency_handover_intent_action" translatable="false">com.google.android.apps.stargate.ACTION_ESOS_QUESTIONNAIRE</string>
+
+    <!-- The action of the intent that hidden menu sends to the app to launch demo mode for sos
+     emergency messaging via satellite. -->
+    <string name="config_satellite_demo_mode_sos_intent_action" translatable="false">com.google.android.apps.stargate.ACTION_ESOS_DEMO</string>
+
+    <!-- The action of the intent that hidden menu sends to the app to launch esp loopback test mode
+     for sos emergency messaging via satellite. -->
+    <string name="config_satellite_test_with_esp_replies_intent_action" translatable="false">com.google.android.apps.stargate.ACTION_ESOS_QUESTIONNAIRE_TEST_WITH_ESP_REPLIES</string>
+
+    <!-- List of country codes where oem-enabled satellite services are either allowed or disallowed
+         by the device. Each country code is a lowercase 2 character ISO-3166-1 alpha-2.
+         -->
+    <string-array name="config_oem_enabled_satellite_country_codes">
+        <item>US</item>
+    </string-array>
+
+    <!-- The file storing S2-cell-based satellite access restriction of the countries defined by
+         config_oem_enabled_satellite_countries. -->
+    <string name="config_oem_enabled_satellite_s2cell_file">/vendor/etc/telephony/sats2.dat</string>
+
+    <!-- The receiver class of the intent that hidden menu sends to start satellite non-emergency mode -->
+    <string name="config_satellite_carrier_roaming_non_emergency_session_class" translatable="false">com.google.android.apps.stargate.sessionmanager.SessionManagerReceiver_Receiver</string>
 </resources>
