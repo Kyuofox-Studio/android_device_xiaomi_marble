@@ -64,6 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
+    'system_ext/etc/seccomp_policy/tcmd.policy': blob_fixup()
+        .add_line_if_missing('lseek: 1'),
     'system_ext/bin/wfdservice64': blob_fixup()
         .add_needed('libwfdservice_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
