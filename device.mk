@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     ueventd-odm.rc
 
+# Media
+PRODUCT_PACKAGES += \
+    init.qti.media.rc \
+    init.qti.media.sh
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon_Sys \
