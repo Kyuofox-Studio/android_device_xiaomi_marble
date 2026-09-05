@@ -1,0 +1,185 @@
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=1
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.video=true
+persist.vendor.audio.auto.scenario=true
+persist.vendor.audio.ha_proxy.enabled=true
+persist.vendor.audio.misound.disable=true
+persist.vendor.audio.misoundasc=false
+ro.af.client_heap_size_kbyte=7168
+ro.audio.flinger_standbytime_ms=2000
+ro.audio.monitorRotation=true
+ro.vendor.audio.camera.loopback.support=true
+ro.vendor.audio.feature.spatial=7
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=65
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=158
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=80
+ro.vendor.audio.soundtrigger.xanzn.vop.level=41
+ro.vendor.audio.soundtrigger.xatx.cnn.level=95
+ro.vendor.audio.soundtrigger.xatx.gmm.level=54
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=54
+ro.vendor.audio.soundtrigger.xatx.vop.level=0
+ro.vendor.audio.support.sound.id=true
+vendor.audio.adm.buffering.ms=2
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.dmabuf.cma.memory.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hdr.record.enable=false
+vendor.audio.hw.aac.encoder=false
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.ull_record_period_multiplier=2
+vendor.audio.ultrasound.stoplatency=60
+vendor.audio.ultrasound.usync=1000
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.period_size=192
+vendor.qc2audio.per_frame.flac.dec.enabled=true
+vendor.qc2audio.suspend.enabled=true
+
+# Battery
+persist.vendor.battery.health=true
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false
+persist.vendor.qcom.bluetooth.aptxadaptiver2_2_support=false
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.bluetooth.a2dp_offload.supported=true
+vendor.hw.fm.init=0
+
+# Camera
+camera.disable_zsl_mode=true
+persist.vendor.vcb.enable=false
+ro.camera.enableCamera1MaxZsl=1
+ro.hardware.camera=xiaomi
+
+# Display
+vendor.display.comp_mask=0
+vendor.display.disable_3d_adaptive_tm=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.disable_sdr_dimming=1
+vendor.display.disable_sdr_histogram=1
+vendor.display.disable_stc_dimming=1
+vendor.display.enable_async_powermode=0
+vendor.display.enable_async_vds_creation=1
+vendor.display.enable_dpps_dynamic_fps=1
+vendor.display.enable_early_wakeup=1
+vendor.display.enable_hdr10_gpu_target=1
+vendor.display.enable_optimize_refresh=0
+vendor.display.enable_rc_support=1
+vendor.display.use_smooth_motion=1
+vendor.display.vds_allow_hwc=0
+
+# DPM
+persist.vendor.dpm.vndr.feature=1
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.idletimer.mode=default
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# Graphics
+debug.egl.hw=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.enable_hwc_vds=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+debug.sf.hw=0
+debug.sf.latch_unsignaled=1
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.set_idle_timer_ms=1000
+debug.sf.treat_170m_as_sRGB=1
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.taro.api32
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.supports_background_blur=1
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+vendor.gralloc.disable_ubwc=0
+
+# Incremental
+ro.incremental.enable=yes
+
+# Media
+debug.c2.use_dmabufheaps=1
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+vendor.pasr.activemode.enabled=false
+vendor.pasr.enabled=false
+
+# Radio
+persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.dynamic_sar=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.sib16_support=1
+
+# RCS
+persist.vendor.rcs.singlereg.feature=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# USB
+sys.usb.mtp.batchcancel=1
+vendor.usb.diag.func.name=ffs
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss_sw
+vendor.usb.rmnet.func.name=gsi
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=gsi
+vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=0
+
+# WiFi
+wifi.aware.interface=wifi-aware0
+
+# Zygote
+zygote.critical_window.minute=10
