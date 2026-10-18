@@ -206,6 +206,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2026-02-01
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
@@ -258,3 +261,6 @@ WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+# Inherit from the proprietary version
+include vendor/xiaomi/marble/BoardConfigVendor.mk
