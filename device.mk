@@ -318,6 +318,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti_vendor
 
 # QXR
