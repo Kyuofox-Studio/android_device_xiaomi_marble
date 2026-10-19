@@ -53,6 +53,7 @@ vendor.qc2audio.suspend.enabled=true
 persist.vendor.battery.health=true
 
 # Bluetooth
+bluetooth.device.default_name=Redmi Note 12 Turbo
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
 bluetooth.hardware.power.rx_cur_ma=28
