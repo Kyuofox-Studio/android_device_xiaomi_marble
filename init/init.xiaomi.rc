@@ -37,9 +37,6 @@ on post-fs-data
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/mac_addr 0770 system wifi
 
-    # Create the directory used by qrtr-lookup
-    mkdir /data/vendor/qrtr 0775 system system
-
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     mkdir /data/vendor/perfspy 0775 camera camera
@@ -161,8 +158,6 @@ on boot
     chmod 0660 /dev/xiaomi-touch
 
 on property:sys.boot_completed=1
-    start qrtr-lookup
-
     # Set thermal mode to mgame
     write /sys/devices/virtual/thermal/thermal_message/sconfig 20
 
@@ -251,13 +246,6 @@ on property:vendor.audio.cit.spkcal.copy=true
 
     chmod 666 /mnt/vendor/persist/audio/fsalgo_rdc.bin
     chmod 666 /mnt/vendor/persist/audio/fsalgo_rdc.txt
-
-service qrtr-lookup /vendor/bin/qrtr-lookup
-    class core
-    user system
-    group system
-    disabled
-    oneshot
 
 service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
