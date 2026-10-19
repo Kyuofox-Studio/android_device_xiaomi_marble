@@ -15,3 +15,6 @@ telephony.lteOnCdmaDevice=1
 
 # WiFi display
 persist.debug.wfd.enable=1
+
+# Xiaomi
+ro.product.mod_device=marble
