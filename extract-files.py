@@ -29,7 +29,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+dolby.+\n', ''),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
-        'vendor/lib/libqtikeymint.so',
         'vendor/lib64/libqtikeymint.so',
     ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
