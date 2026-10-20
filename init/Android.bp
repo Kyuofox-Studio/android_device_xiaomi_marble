@@ -22,6 +22,18 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.kernel.post_boot-taro.sh",
+    src: "init.kernel.post_boot-taro.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.kernel.post_boot.sh",
+    src: "init.kernel.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.class_core.sh",
     src: "init.qcom.class_core.sh",
     vendor: true,
@@ -53,6 +65,19 @@ sh_binary {
 }
 
 prebuilt_etc {
+    name: "init.qti.kernel.rc",
+    src: "init.qti.kernel.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.kernel.sh",
+    src: "init.qti.kernel.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qti.media.rc",
     src: "init.qti.media.rc",
     sub_dir: "init",
@@ -62,6 +87,12 @@ prebuilt_etc {
 sh_binary {
     name: "init.qti.media.sh",
     src: "init.qti.media.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.write.sh",
+    src: "init.qti.write.sh",
     vendor: true,
 }
 
@@ -91,4 +122,10 @@ prebuilt_etc {
     filename: "ueventd.rc",
     src: "ueventd-odm.rc",
     device_specific: true,
+}
+
+sh_binary {
+    name: "vendor_modprobe.sh",
+    src: "vendor_modprobe.sh",
+    vendor: true,
 }
