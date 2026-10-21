@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResTarget_Vendor",
+    name: "FrameworksResTarget",
     vendor: true,
 }
