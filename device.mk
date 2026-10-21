@@ -372,17 +372,17 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon_Sys \
-    FrameworksResCommon_Sys \
-    SettingsResCommon_Sys \
-    SystemUIResCommon_Sys \
-    TelecommResCommon_Sys \
-    TelephonyResCommon_Sys \
-    UwbResCommon_Sys \
-    WifiResCommon_Sys
+    CarrierConfigResCommon \
+    FrameworksResCommon \
+    SettingsResCommon \
+    SystemUIResCommon \
+    TelecommResCommon \
+    TelephonyResCommon \
+    UwbResCommon \
+    WifiResCommon
 
 PRODUCT_PACKAGES += \
-    FrameworksResTarget_Vendor \
+    FrameworksResTarget \
     WifiResTarget \
     WifiResTarget_spf \
     WifiResTarget_ukee

@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SettingsResCommon_Sys",
+    name: "SettingsResCommon",
     product_specific: true,
 }
