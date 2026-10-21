@@ -25,6 +25,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'=([0-9]+)>', r'="\1">'),
     'vendor/etc/init/init.embmssl_server.rc': blob_fixup()
         .regex_replace('.*interface.*\n', ''),
+    'vendor/etc/media_codecs_c2_audio.xml': blob_fixup()
+        .regex_replace('.+media_codecs_dolby_audio.+\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
     (
