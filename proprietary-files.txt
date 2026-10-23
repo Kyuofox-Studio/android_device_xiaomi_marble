@@ -122,10 +122,8 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 # Audio configs
 vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/backend_conf.xml
-vendor/etc/card-defs.xml
 vendor/etc/kvh2xml.xml
 vendor/etc/media_codecs_c2_audio.xml
-vendor/etc/microphone_characteristics.xml
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
