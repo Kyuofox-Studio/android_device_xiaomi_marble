@@ -61,6 +61,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libwfdcommonutils.so': blob_fixup()
+        .remove_needed('libheif.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib64/libqtikeymint.so',
