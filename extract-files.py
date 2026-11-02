@@ -64,7 +64,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.media.audio.common.types-V2-cpp.so',
             'android.media.audio.common.types-V5-cpp.so',
-        ),
+        )
+        .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
         .replace_needed(
             'libprotobuf-cpp-full.so',
