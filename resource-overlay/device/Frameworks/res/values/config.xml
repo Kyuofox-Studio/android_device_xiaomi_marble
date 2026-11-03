@@ -21,7 +21,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item format="float" name="config_screenBrightnessSettingMinimumFloat" type="dimen">0</item>
+    <item format="float" name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.000854597</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -32,7 +32,7 @@
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item format="float" name="config_screenBrightnessSettingDefaultFloat" type="dimen">0.5</item>
+    <item format="float" name="config_screenBrightnessSettingDefaultFloat" type="dimen">0.07496032</item>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -45,6 +45,7 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
+    <item format="float" name="config_screenBrightnessDimFloat" type="dimen">0.000854597</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
@@ -196,70 +197,70 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2.0</item>
-        <item>2.5</item>
-        <item>2.8</item>
-        <item>16.3</item>
-        <item>26.2</item>
-        <item>32.0</item>
-        <item>36.9</item>
-        <item>49.4</item>
-        <item>63.7</item>
-        <item>82.5</item>
-        <item>89.9</item>
-        <item>91.6</item>
-        <item>91.6</item>
-        <item>91.6</item>
+        <item>3.1</item>
+        <item>3.5</item>
+        <item>3.8</item>
+        <item>16.4</item>
+        <item>26.0</item>
+        <item>34.0</item>
+        <item>37.0</item>
+        <item>49.0</item>
+        <item>62.0</item>
+        <item>79.0</item>
+        <item>86.0</item>
+        <item>88.0</item>
+        <item>88.0</item>
+        <item>88.0</item>
+        <item>89.0</item>
+        <item>89.0</item>
+        <item>89.0</item>
+        <item>91.0</item>
+        <item>91.0</item>
         <item>93.0</item>
         <item>93.0</item>
         <item>93.0</item>
-        <item>94.6</item>
-        <item>94.6</item>
-        <item>95.7</item>
-        <item>95.7</item>
-        <item>95.7</item>
-        <item>95.7</item>
-        <item>97.2</item>
-        <item>97.2</item>
-        <item>98.4</item>
-        <item>101.2</item>
-        <item>102.2</item>
-        <item>103.8</item>
-        <item>106.3</item>
-        <item>107.7</item>
-        <item>110.2</item>
-        <item>111.6</item>
-        <item>114.0</item>
-        <item>115.2</item>
-        <item>116.5</item>
-        <item>120.4</item>
-        <item>121.1</item>
-        <item>122.6</item>
-        <item>125.3</item>
-        <item>126.5</item>
-        <item>128.7</item>
-        <item>129.6</item>
-        <item>132.1</item>
-        <item>134.0</item>
-        <item>156.3</item>
-        <item>174.4</item>
-        <item>193.5</item>
-        <item>223.4</item>
-        <item>252.0</item>
-        <item>290.1</item>
-        <item>315.4</item>
-        <item>332.4</item>
-        <item>404.2</item>
-        <item>433.1</item>
-        <item>446.1</item>
-        <item>460.9</item>
-        <item>474.8</item>
-        <item>488.7</item>
+        <item>93.0</item>
+        <item>94.0</item>
+        <item>94.0</item>
+        <item>95.0</item>
+        <item>99.0</item>
+        <item>100.0</item>
+        <item>101.0</item>
+        <item>103.0</item>
+        <item>105.0</item>
+        <item>108.0</item>
+        <item>109.0</item>
+        <item>111.0</item>
+        <item>113.0</item>
+        <item>113.0</item>
+        <item>117.0</item>
+        <item>119.0</item>
+        <item>120.0</item>
+        <item>123.0</item>
+        <item>124.0</item>
+        <item>126.0</item>
+        <item>127.0</item>
+        <item>130.0</item>
+        <item>132.0</item>
+        <item>154.0</item>
+        <item>172.0</item>
+        <item>192.0</item>
+        <item>220.0</item>
+        <item>251.0</item>
+        <item>292.0</item>
+        <item>320.0</item>
+        <item>337.0</item>
+        <item>411.0</item>
+        <item>439.0</item>
+        <item>453.0</item>
+        <item>466.0</item>
+        <item>480.0</item>
         <item>500.0</item>
-        <item>500.0</item>
-        <item>512.5</item>
+        <item>508.3</item>
+        <item>516.6</item>
         <item>525.0</item>
-        <item>537.5</item>
+        <item>532.3</item>
+        <item>540.6</item>
         <item>550.0</item>
         <item>562.5</item>
         <item>575.0</item>
