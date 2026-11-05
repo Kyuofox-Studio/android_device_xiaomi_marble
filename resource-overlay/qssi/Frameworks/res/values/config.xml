@@ -230,6 +230,18 @@
          config_oem_enabled_satellite_countries. -->
     <string name="config_oem_enabled_satellite_s2cell_file">/vendor/etc/telephony/sats2.dat</string>
 
+    <!-- Indicates the maximum allowed data mode specified by the OEMs. It ensures the
+         entitled and carrier config overridden data mode by the carrier is within this value.
+         Refer to {@link CarrierConfigManager#SATELLITE_DATA_SUPPORT_MODE} to see
+         the possible values -->
+    <integer name="max_allowed_data_mode">2</integer>
+
     <!-- The receiver class of the intent that hidden menu sends to start satellite non-emergency mode -->
     <string name="config_satellite_carrier_roaming_non_emergency_session_class" translatable="false">com.google.android.apps.stargate.sessionmanager.SessionManagerReceiver_Receiver</string>
+
+    <!-- Indicating whether the retry timer from setup data call response for data throttling should
+         be honored for emergency network request. By default this is off, meaning for emergency
+         network requests, the data frameworks will ignore the previous retry timer passed in from
+         setup data call response. -->
+    <bool name="config_honor_data_retry_timer_for_emergency_network">true</bool>
 </resources>

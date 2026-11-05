@@ -19,4 +19,7 @@
 
     <!-- String indicating the package name of the device GbaService implementation. -->
     <string name="config_gba_package" translatable="false">com.qualcomm.qti.uimGbaApp</string>
+
+    <!-- Whether to show the call connected indicator preference -->
+    <bool name="show_call_connected_indicator_preference">true</bool>
 </resources>

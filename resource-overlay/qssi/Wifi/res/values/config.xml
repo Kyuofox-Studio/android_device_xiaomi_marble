@@ -69,6 +69,9 @@
     <!-- Indicates that dynamic country code update in STA mode is supported on this device -->
     <bool name="config_wifiStaDynamicCountryCodeUpdateSupported">true</bool>
 
+    <!-- Whether to update the country code from scan results when no telephony country code is available -->
+    <bool name="config_wifiUpdateCountryCodeFromScanResultGeneric">true</bool>
+
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
     <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,524288,1048576,4194304</string>
@@ -76,6 +79,9 @@
     <!-- List of constants to indicate how many failures are needed to temporarily disable a network
     from auto-connect -->
     <integer name="config_wifiDisableReasonByWrongPasswordThreshold">2</integer>
+
+    <!-- Number of AP unable-to-handle-new-STA failures before blocklisting a BSSID -->
+    <integer name="config_wifiBssidBlocklistMonitorApUnableToHandleNewStaThreshold">3</integer>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
     <bool name="config_wifiSaeUpgradeOffloadEnabled">true</bool>

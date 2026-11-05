@@ -296,8 +296,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    NfcResCommon \
     SettingsResCommon \
     SystemUIResCommon \
+    TelecommResCommon \
     TelephonyResCommon \
     UwbResCommon \
     WifiResCommon
